@@ -1,4 +1,5 @@
-# Comando mkdir - serve para criar diretórios (pastas)
+# Comando mkdir
+  serve para criar diretórios (pastas)
 
 mkdir --help
 Usage: mkdir [OPTION]... DIRECTORY...
