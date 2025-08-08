@@ -1,4 +1,5 @@
-# Comando chgrp - Comando usdado para alterar o grupo associado a um arquivo ou pastas
+# Comando chgrp
+  Comando usdado para alterar o grupo associado a um arquivo ou pastas
 
 chgrp --help
 Usage: chgrp [OPTION]... GROUP FILE...
