@@ -1,4 +1,5 @@
-# comando LS - comando usado para lista conteudo de um diretorio (pasta)
+# comando LS
+  comando usado para lista conteudo de um diretorio (pasta)
 
 ls --help
 Usage: ls [OPTION]... [FILE]...
