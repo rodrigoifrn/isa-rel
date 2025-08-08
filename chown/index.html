@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Comando apt - ISA-Rel</title>
+    <title>Comando chown - Com o chown você pode mudar o dono de arquivos, diretórios e links. - ISA-Rel</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Comando apt";
-        var mkdocs_page_input_path = "apt.md";
+        var mkdocs_page_name = "Comando chown - Com o chown voc\u00ea pode mudar o dono de arquivos, diret\u00f3rios e links.";
+        var mkdocs_page_input_path = "chown.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -47,10 +47,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../adduser/">Comando adduser - criar usuario já com a pasta Home, shell e pré-configuração (recomendado para usuários básicos)</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Comando apt</a>
-    <ul class="current">
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../apt/">Comando apt</a>
                 </li>
               </ul>
               <ul>
@@ -65,8 +63,10 @@
                 <li class="toctree-l1"><a class="reference internal" href="../chmod/">Comando chmod - é usado para alterar as permissões de acesso a arquivos e diretórios</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../chown/">Comando chown - Com o chown você pode mudar o dono de arquivos, diretórios e links.</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Comando chown - Com o chown você pode mudar o dono de arquivos, diretórios e links.</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -120,7 +120,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Comando apt</li>
+      <li class="breadcrumb-item active">Comando chown - Com o chown você pode mudar o dono de arquivos, diretórios e links.</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -129,39 +129,58 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="comando-apt">Comando apt</h1>
-<p>apt 2.8.3 (amd64)
-Usage: apt [options] command</p>
-<p>apt is a commandline package manager and provides commands for
-searching and managing as well as querying information about packages.
-It provides the same functionality as the specialized APT tools,
-like apt-get and apt-cache, but enables options more suitable for
-interactive use by default.</p>
-<p>Most used commands:
-- <code>list</code> - list packages based on package names
-- <code>search</code> - search in package descriptions
-- <code>show</code> - show package details
-- <code>install</code> - install packages
-- <code>reinstall</code> - reinstall packages
-- <code>remove</code> - remove packages
-- <code>autoremove</code>  automatically remove all unused packages
-- <code>update</code> - update list of available packages
-- <code>upgrade</code> - upgrade the system by installing/upgrading packages
-- <code>full-upgrade</code> - upgrade the system by removing/installing/upgrading packages
-- <code>edit-sources</code> - edit the source information file
-- <code>satisfy</code> - satisfy dependency strings</p>
-<p>See apt(8) for more information about the available commands.
-Configuration options and syntax is detailed in apt.conf(5).
-Information about how to configure sources can be found in sources.list(5).
-Package and version choices can be expressed via apt_preferences(5).
-Security details are available in apt-secure(8).
-                                        This APT has Super Cow Powers</p>
+                <h1 id="comando-chown-com-o-chown-voce-pode-mudar-o-dono-de-arquivos-diretorios-e-links">Comando chown - Com o chown você pode mudar o dono de arquivos, diretórios e links.</h1>
+<p>chown --help
+Usage: chown [OPTION]... [OWNER][:[GROUP]] FILE...
+  or:  chown [OPTION]... --reference=RFILE FILE...
+Change the owner and/or group of each FILE to OWNER and/or GROUP.
+With --reference, change the owner and group of each FILE to those of RFILE.</p>
+<p>-c, --changes          like verbose but report only when a change is made
+  -f, --silent, --quiet  suppress most error messages
+  -v, --verbose          output a diagnostic for every file processed
+      --dereference      affect the referent of each symbolic link (this is
+                         the default), rather than the symbolic link itself
+  -h, --no-dereference   affect symbolic links instead of any referenced file
+                         (useful only on systems that can change the
+                         ownership of a symlink)
+      --from=CURRENT_OWNER:CURRENT_GROUP
+                         change the owner and/or group of each file only if
+                         its current owner and/or group match those specified
+                         here.  Either may be omitted, in which case a match
+                         is not required for the omitted attribute
+      --no-preserve-root  do not treat '/' specially (the default)
+      --preserve-root    fail to operate recursively on '/'
+      --reference=RFILE  use RFILE's owner and group rather than specifying
+                         OWNER:GROUP values.  RFILE is always dereferenced.
+  -R, --recursive        operate on files and directories recursively</p>
+<p>The following options modify how a hierarchy is traversed when the -R
+option is also specified.  If more than one is specified, only the final
+one takes effect.</p>
+<p>-H                     if a command line argument is a symbolic link
+                         to a directory, traverse it
+  -L                     traverse every symbolic link to a directory
+                         encountered
+  -P                     do not traverse any symbolic links (default)</p>
+<pre><code>  --help        display this help and exit
+  --version     output version information and exit
+</code></pre>
+<p>Owner is unchanged if missing.  Group is unchanged if missing, but changed
+to login group if implied by a ':' following a symbolic OWNER.
+OWNER and GROUP may be numeric as well as symbolic.</p>
+<p>Examples:
+  chown root /u        Change the owner of /u to "root".
+  chown root:staff /u  Likewise, but also change its group to "staff".
+  chown -hR root /u    Change the owner of /u and subfiles to "root".</p>
+<p>GNU coreutils online help: <a href="https://www.gnu.org/software/coreutils/">https://www.gnu.org/software/coreutils/</a>
+Report any translation bugs to <a href="https://translationproject.org/team/">https://translationproject.org/team/</a>
+Full documentation <a href="https://www.gnu.org/software/coreutils/chown">https://www.gnu.org/software/coreutils/chown</a>
+or available locally via: info '(coreutils) chown invocation'</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../adduser/" class="btn btn-neutral float-left" title="Comando adduser - criar usuario já com a pasta Home, shell e pré-configuração (recomendado para usuários básicos)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../cd/" class="btn btn-neutral float-right" title="Comando CD - Comando usado para acessar diretorios (pastas)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../chmod/" class="btn btn-neutral float-left" title="Comando chmod - é usado para alterar as permissões de acesso a arquivos e diretórios"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../cowsay/" class="btn btn-neutral float-right" title="Cowsay">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -184,10 +203,10 @@ Security details are available in apt-secure(8).
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../adduser/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../chmod/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../cd/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../cowsay/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

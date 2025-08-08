@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Comando apt - ISA-Rel</title>
+    <title>Comando mkdir - serve para criar diretórios (pastas) - ISA-Rel</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Comando apt";
-        var mkdocs_page_input_path = "apt.md";
+        var mkdocs_page_name = "Comando mkdir - serve para criar diret\u00f3rios (pastas)";
+        var mkdocs_page_input_path = "mkdir.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -47,10 +47,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../adduser/">Comando adduser - criar usuario já com a pasta Home, shell e pré-configuração (recomendado para usuários básicos)</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Comando apt</a>
-    <ul class="current">
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../apt/">Comando apt</a>
                 </li>
               </ul>
               <ul>
@@ -85,8 +83,10 @@
                 <li class="toctree-l1"><a class="reference internal" href="../ls/">comando LS - comando usado para lista conteudo de um diretorio (pasta)</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../mkdir/">Comando mkdir - serve para criar diretórios (pastas)</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Comando mkdir - serve para criar diretórios (pastas)</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -120,7 +120,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Comando apt</li>
+      <li class="breadcrumb-item active">Comando mkdir - serve para criar diretórios (pastas)</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -129,39 +129,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="comando-apt">Comando apt</h1>
-<p>apt 2.8.3 (amd64)
-Usage: apt [options] command</p>
-<p>apt is a commandline package manager and provides commands for
-searching and managing as well as querying information about packages.
-It provides the same functionality as the specialized APT tools,
-like apt-get and apt-cache, but enables options more suitable for
-interactive use by default.</p>
-<p>Most used commands:
-- <code>list</code> - list packages based on package names
-- <code>search</code> - search in package descriptions
-- <code>show</code> - show package details
-- <code>install</code> - install packages
-- <code>reinstall</code> - reinstall packages
-- <code>remove</code> - remove packages
-- <code>autoremove</code>  automatically remove all unused packages
-- <code>update</code> - update list of available packages
-- <code>upgrade</code> - upgrade the system by installing/upgrading packages
-- <code>full-upgrade</code> - upgrade the system by removing/installing/upgrading packages
-- <code>edit-sources</code> - edit the source information file
-- <code>satisfy</code> - satisfy dependency strings</p>
-<p>See apt(8) for more information about the available commands.
-Configuration options and syntax is detailed in apt.conf(5).
-Information about how to configure sources can be found in sources.list(5).
-Package and version choices can be expressed via apt_preferences(5).
-Security details are available in apt-secure(8).
-                                        This APT has Super Cow Powers</p>
+                <h1 id="comando-mkdir-serve-para-criar-diretorios-pastas">Comando mkdir - serve para criar diretórios (pastas)</h1>
+<p>mkdir --help
+Usage: mkdir [OPTION]... DIRECTORY...
+Create the DIRECTORY(ies), if they do not already exist.</p>
+<p>Mandatory arguments to long options are mandatory for short options too.
+  -m, --mode=MODE   set file mode (as in chmod), not a=rwx - umask
+  -p, --parents     no error if existing, make parent directories as needed,
+                    with their file modes unaffected by any -m option.
+  -v, --verbose     print a message for each created directory
+  -Z                   set SELinux security context of each created directory
+                         to the default type
+      --context[=CTX]  like -Z, or if CTX is specified then set the SELinux
+                         or SMACK security context to CTX
+      --help        display this help and exit
+      --version     output version information and exit</p>
+<p>GNU coreutils online help: <a href="https://www.gnu.org/software/coreutils/">https://www.gnu.org/software/coreutils/</a>
+Report any translation bugs to <a href="https://translationproject.org/team/">https://translationproject.org/team/</a>
+Full documentation <a href="https://www.gnu.org/software/coreutils/mkdir">https://www.gnu.org/software/coreutils/mkdir</a>
+or available locally via: info '(coreutils) mkdir invocation'</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../adduser/" class="btn btn-neutral float-left" title="Comando adduser - criar usuario já com a pasta Home, shell e pré-configuração (recomendado para usuários básicos)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../cd/" class="btn btn-neutral float-right" title="Comando CD - Comando usado para acessar diretorios (pastas)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ls/" class="btn btn-neutral float-left" title="comando LS - comando usado para lista conteudo de um diretorio (pasta)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mkdocs/" class="btn btn-neutral float-right" title="Mkdocs">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -184,10 +176,10 @@ Security details are available in apt-secure(8).
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../adduser/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../ls/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../cd/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../mkdocs/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

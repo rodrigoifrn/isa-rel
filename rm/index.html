@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Comando apt - ISA-Rel</title>
+    <title>Comando RM - usado para renomear arquivos e diretórios - ISA-Rel</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Comando apt";
-        var mkdocs_page_input_path = "apt.md";
+        var mkdocs_page_name = "Comando RM - usado para renomear arquivos e diret\u00f3rios";
+        var mkdocs_page_input_path = "rm.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -47,10 +47,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../adduser/">Comando adduser - criar usuario já com a pasta Home, shell e pré-configuração (recomendado para usuários básicos)</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Comando apt</a>
-    <ul class="current">
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../apt/">Comando apt</a>
                 </li>
               </ul>
               <ul>
@@ -93,8 +91,10 @@
                 <li class="toctree-l1"><a class="reference internal" href="../mkdocs/">Mkdocs</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../rm/">Comando RM - usado para renomear arquivos e diretórios</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Comando RM - usado para renomear arquivos e diretórios</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -120,7 +120,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Comando apt</li>
+      <li class="breadcrumb-item active">Comando RM - usado para renomear arquivos e diretórios</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -129,39 +129,48 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="comando-apt">Comando apt</h1>
-<p>apt 2.8.3 (amd64)
-Usage: apt [options] command</p>
-<p>apt is a commandline package manager and provides commands for
-searching and managing as well as querying information about packages.
-It provides the same functionality as the specialized APT tools,
-like apt-get and apt-cache, but enables options more suitable for
-interactive use by default.</p>
-<p>Most used commands:
-- <code>list</code> - list packages based on package names
-- <code>search</code> - search in package descriptions
-- <code>show</code> - show package details
-- <code>install</code> - install packages
-- <code>reinstall</code> - reinstall packages
-- <code>remove</code> - remove packages
-- <code>autoremove</code>  automatically remove all unused packages
-- <code>update</code> - update list of available packages
-- <code>upgrade</code> - upgrade the system by installing/upgrading packages
-- <code>full-upgrade</code> - upgrade the system by removing/installing/upgrading packages
-- <code>edit-sources</code> - edit the source information file
-- <code>satisfy</code> - satisfy dependency strings</p>
-<p>See apt(8) for more information about the available commands.
-Configuration options and syntax is detailed in apt.conf(5).
-Information about how to configure sources can be found in sources.list(5).
-Package and version choices can be expressed via apt_preferences(5).
-Security details are available in apt-secure(8).
-                                        This APT has Super Cow Powers</p>
+                <h1 id="comando-rm-usado-para-renomear-arquivos-e-diretorios">Comando RM - usado para renomear arquivos e diretórios</h1>
+<p>rm --help
+Usage: rm [OPTION]... [FILE]...
+Remove (unlink) the FILE(s).</p>
+<p>-f, --force           ignore nonexistent files and arguments, never prompt
+  -i                    prompt before every removal
+  -I                    prompt once before removing more than three files, or
+                          when removing recursively; less intrusive than -i,
+                          while still giving protection against most mistakes
+      --interactive[=WHEN]  prompt according to WHEN: never, once (-I), or
+                          always (-i); without WHEN, prompt always
+      --one-file-system  when removing a hierarchy recursively, skip any
+                          directory that is on a file system different from
+                          that of the corresponding command line argument
+      --no-preserve-root  do not treat '/' specially
+      --preserve-root[=all]  do not remove '/' (default);
+                              with 'all', reject any command line argument
+                              on a separate device from its parent
+  -r, -R, --recursive   remove directories and their contents recursively
+  -d, --dir             remove empty directories
+  -v, --verbose         explain what is being done
+      --help        display this help and exit
+      --version     output version information and exit</p>
+<p>By default, rm does not remove directories.  Use the --recursive (-r or -R)
+option to remove each listed directory, too, along with all of its contents.</p>
+<p>To remove a file whose name starts with a '-', for example '-foo',
+use one of these commands:
+  rm -- -foo</p>
+<p>rm ./-foo</p>
+<p>Note that if you use rm to remove a file, it might be possible to recover
+some of its contents, given sufficient expertise and/or time.  For greater
+assurance that the contents are truly unrecoverable, consider using shred(1).</p>
+<p>GNU coreutils online help: <a href="https://www.gnu.org/software/coreutils/">https://www.gnu.org/software/coreutils/</a>
+Report any translation bugs to <a href="https://translationproject.org/team/">https://translationproject.org/team/</a>
+Full documentation <a href="https://www.gnu.org/software/coreutils/rm">https://www.gnu.org/software/coreutils/rm</a>
+or available locally via: info '(coreutils) rm invocation'</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../adduser/" class="btn btn-neutral float-left" title="Comando adduser - criar usuario já com a pasta Home, shell e pré-configuração (recomendado para usuários básicos)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../cd/" class="btn btn-neutral float-right" title="Comando CD - Comando usado para acessar diretorios (pastas)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../mkdocs/" class="btn btn-neutral float-left" title="Mkdocs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../useradd/" class="btn btn-neutral float-right" title="Comando useradd - Criar Usuário de baixo nivel (só cria a pasta Home se passar comandos combinados)">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -184,10 +193,10 @@ Security details are available in apt-secure(8).
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../adduser/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../mkdocs/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../cd/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../useradd/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
