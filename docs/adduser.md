@@ -1,4 +1,5 @@
-# Comando adduser - criar usuario já com a pasta Home, shell e pré-configuração (recomendado para usuários básicos)
+# Comando adduser 
+        criar usuario já com a pasta Home, shell e pré-configuração (recomendado para usuários básicos)
 
 adduser -help
 adduser [--uid id] [--firstuid id] [--lastuid id]
