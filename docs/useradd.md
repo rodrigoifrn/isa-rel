@@ -1,4 +1,5 @@
-# Comando useradd - Criar Usuário de baixo nivel (só cria a pasta Home se passar comandos combinados)
+# Comando useradd
+       Criar Usuário de baixo nivel (só cria a pasta Home se passar comandos combinados)
 useradd -help
 Usage: useradd [options] LOGIN
        useradd -D
