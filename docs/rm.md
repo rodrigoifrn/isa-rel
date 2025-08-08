@@ -1,4 +1,5 @@
-#Comando RM - usado para renomear arquivos e diretórios
+# Comando RM
+  usado para renomear arquivos e diretórios
 rm --help
 Usage: rm [OPTION]... [FILE]...
 Remove (unlink) the FILE(s).
