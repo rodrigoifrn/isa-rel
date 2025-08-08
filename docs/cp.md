@@ -1,4 +1,5 @@
-# Comando CP - Copiar
+# Comando CP 
+  Copiar arquivos
 cp --help
 Usage: cp [OPTION]... [-T] SOURCE DEST
   or:  cp [OPTION]... SOURCE... DIRECTORY
