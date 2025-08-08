@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Mkdocs - ISA-Rel</title>
+    <title>mkdocs - ISA-Rel</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Mkdocs";
+        var mkdocs_page_name = "mkdocs";
         var mkdocs_page_input_path = "mkdocs.md";
         var mkdocs_page_url = null;
       </script>
@@ -44,7 +44,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../adduser/">Comando adduser - criar usuario já com a pasta Home, shell e pré-configuração (recomendado para usuários básicos)</a>
+                <li class="toctree-l1"><a class="reference internal" href="../adduser/">Comando adduser</a>
                 </li>
               </ul>
               <ul>
@@ -52,51 +52,49 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../cd/">Comando CD - Comando usado para acessar diretorios (pastas)</a>
+                <li class="toctree-l1"><a class="reference internal" href="../cd/">Comando CD</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../chgrp/">Comando chgrp - Comando usdado para alterar o grupo associado a um arquivo ou pastas</a>
+                <li class="toctree-l1"><a class="reference internal" href="../chgrp/">Comando chgrp</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../chmod/">Comando chmod - é usado para alterar as permissões de acesso a arquivos e diretórios</a>
+                <li class="toctree-l1"><a class="reference internal" href="../chmod/">Comando chmod</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../chown/">Comando chown - Com o chown você pode mudar o dono de arquivos, diretórios e links.</a>
+                <li class="toctree-l1"><a class="reference internal" href="../chown/">Comando chown</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../cowsay/">Cowsay</a>
+                <li class="toctree-l1"><a class="reference internal" href="../cp/">Comando CP</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../cp/">Comando CP - Copiar</a>
+                <li class="toctree-l1"><a class="reference internal" href="../git/">git</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../git/">Git</a>
+                <li class="toctree-l1"><a class="reference internal" href="../ls/">comando LS</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../ls/">comando LS - comando usado para lista conteudo de um diretorio (pasta)</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../mkdir/">Comando mkdir - serve para criar diretórios (pastas)</a>
+                <li class="toctree-l1"><a class="reference internal" href="../mkdir/">Comando mkdir</a>
                 </li>
               </ul>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Mkdocs</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">mkdocs</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../rm/">Comando RM - usado para renomear arquivos e diretórios</a>
+                <li class="toctree-l1"><a class="reference internal" href="../rm/">Comando RM</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../useradd/">Comando useradd - Criar Usuário de baixo nivel (só cria a pasta Home se passar comandos combinados)</a>
+                <li class="toctree-l1"><a class="reference internal" href="../useradd/">Comando useradd</a>
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Historicos</span></p>
@@ -118,7 +116,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Mkdocs</li>
+      <li class="breadcrumb-item active">mkdocs</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -127,13 +125,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p>“# mkdocs”</p>
+                <h1 id="mkdocs">mkdocs</h1>
+<p>mkdocs --help
+Usage: mkdocs [OPTIONS] COMMAND [ARGS]...</p>
+<p>MkDocs - Project documentation with Markdown.</p>
+<p>Options:
+  -V, --version         Show the version and exit.
+  -q, --quiet           Silence warnings
+  -v, --verbose         Enable verbose output
+  --color / --no-color  Force enable or disable color and wrapping for the
+                        output. Default is auto-detect.
+  -h, --help            Show this message and exit.</p>
+<p>Commands:
+  build      Build the MkDocs documentation
+  get-deps   Show required PyPI packages inferred from plugins in mkdocs.yml
+  gh-deploy  Deploy your documentation to GitHub Pages
+  new        Create a new MkDocs project
+  serve      Run the builtin development server</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../mkdir/" class="btn btn-neutral float-left" title="Comando mkdir - serve para criar diretórios (pastas)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../rm/" class="btn btn-neutral float-right" title="Comando RM - usado para renomear arquivos e diretórios">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../mkdir/" class="btn btn-neutral float-left" title="Comando mkdir"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../rm/" class="btn btn-neutral float-right" title="Comando RM">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
