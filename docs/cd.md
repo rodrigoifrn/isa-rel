@@ -1,4 +1,5 @@
-# Comando CD - Comando usado para acessar diretorios (pastas)
+# Comando CD
+    Comando usado para acessar diretorios (pastas)
 
 cd --help
 cd: cd [-L|[-P [-e]] [-@]] [dir]
