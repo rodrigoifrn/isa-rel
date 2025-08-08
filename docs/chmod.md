@@ -1,4 +1,5 @@
-# Comando chmod - é usado para alterar as permissões de acesso a arquivos e diretórios
+# Comando chmod
+  é usado para alterar as permissões de acesso a arquivos e diretórios
 
 chmod --help
 Usage: chmod [OPTION]... MODE[,MODE]... FILE...
