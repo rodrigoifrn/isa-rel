@@ -1,4 +1,5 @@
-# Comando chown - Com o chown você pode mudar o dono de arquivos, diretórios e links.
+# Comando chown
+  Com o chown você pode mudar o dono de arquivos, diretórios e links.
 
 chown --help
 Usage: chown [OPTION]... [OWNER][:[GROUP]] FILE...
